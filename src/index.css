@@ -1,0 +1,295 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+    /* background-color: #FAFAFA; */
+}
+
+/* icon and page name in sidebar */
+.css-12w9als {
+  display: flex;
+  align-items: center;
+  gap: 0 0.4vw;
+}
+
+/* 
+.dark-light-mode{
+  width: 90px;
+  height: 105px;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vh 0;
+  border-radius: 10%;
+
+} */
+
+/* is it also the sidebar */
+
+aside {
+  /* height: 100vh; */
+  height: 100%;
+  background-color: #ebecf2;
+  position: fixed !important;
+  left: 0;
+  z-index: 99;
+}
+
+.css-ewdv3l {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 6vh 0;
+  color: #78828a;
+}
+
+.css-1t8x7v1 {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #78828a;
+}
+
+a:active {
+  color: green;
+}
+
+/* NavBar comp */
+.flex-navbar {
+  width: 100%;
+  background-color: #ebecf2;
+  padding: 1% 1%;
+  position: fixed !important;
+  top: 0;
+}
+
+.flex-navbar img {
+  cursor: pointer;
+}
+
+.flex-navbar h1 {
+  font-size: 18px;
+  position: relative;
+  left: 5%;
+}
+
+.flex-navbar,
+.search,
+.cal-not-profile,
+label {
+  display: flex;
+  align-items: center;
+}
+
+.flex-navbar {
+  justify-content: space-between;
+}
+
+.search {
+  border: 1px solid #78828a;
+  padding: 1.5vh 1vw;
+  border-radius: 20px;
+  background-color: #fff;
+  width: 20%;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  margin-left: 4px;
+}
+
+.cal-date {
+  display: flex;
+  align-items: center;
+}
+
+.cal-not-profile img {
+  padding: 0 0.5vw;
+}
+
+.user-name-caret {
+  display: flex;
+  align-items: center;
+  border: 1px solid #78828a;
+  padding: 1.5vh 0;
+  border-radius: 30px;
+  /* gap: 0 2vw; */
+  /* justify-content: space-between; */
+}
+
+.user-name-caret div {
+  padding: 0 0.5vw;
+}
+.user-name-caret .user-name {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.last-all{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Dashboard comp */
+
+.dashboard-con {
+  padding-top: 12%;
+  padding-left: 7%;
+  /* padding-right: 5%; */
+
+}
+
+
+
+.bar-table, .users-progress {
+   display: grid;
+  grid-template-columns: 0.6fr 0.4fr;
+  gap: 0 2%;
+
+}
+
+
+
+.chart{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* gap: 1vh 1vw; */
+}
+
+
+
+.icon-market{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-market div{
+  width: 5vw
+}
+
+
+
+
+.chart-progress .chart div div{
+  /* width: 3%; */
+}
+
+.icon-chart{
+  display: flex;
+  align-items: center;
+}
+
+.apexcharts-title-text{
+  display: none;
+}
+
+.apexcharts-yaxis{
+ display: none; 
+}
+
+.apexcharts-inner{
+  /* display: none;  */
+}
+
+
+.up-p{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* userpage  */
+.user-con {
+  height: 100vh;
+}
+
+.user-page-con {
+  width: 80%;
+  padding-top: 12%;
+  margin-left: 10%;
+  /* height: 100%; */
+}
+
+td {
+  cursor: pointer;
+}
+
+.chart-progress {
+  padding-right: 2vw;
+}
+
+.fifty span {
+  display: none !important;
+}
+.fifty div {
+  height: 10px !important;
+  /* background: rgb(224, 224, 222);
+  border-radius: 50px;
+  width: 100%;
+  overflow: hidden; */
+}
+
+.first-progress div div {
+  background-color: #6160dc !important;
+}
+
+.second-progress div div {
+  background-color: #54c5eb !important;
+}
+
+.third-progress div div {
+  background-color: #ffb74a !important;
+}
+
+.fifty div div {
+  height: 10px !important;
+  /* width: 50%;
+  background: rgb(106, 27, 154);
+  transition: width 1s ease-in-out 0s;
+  border-radius: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; */
+}
+
+.platform-all,
+.p-con {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.p-con {
+  margin: 0.7vh 0;
+}
+
+.first-p {
+  font-weight: bold;
+  margin: 0.7vh 0;
+}
+
+.progress-column {
+  display: flex;
+  gap: 2vh 0;
+  flex-direction: column;
+}
+
+.marketpage-con {
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 12%;
+}
+
+.apexcharts-canvas {
+  position: relative;
+  user-select: none;
+  z-index: -1 !important;
+}
