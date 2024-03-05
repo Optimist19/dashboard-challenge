@@ -2,31 +2,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-    /* background-color: #FAFAFA; */
 }
 
-/* icon and page name in sidebar */
+body {
+  background-color: #fafafa;
+}
+
 .css-12w9als {
   display: flex;
   align-items: center;
   gap: 0 0.4vw;
 }
-
-/* 
-.dark-light-mode{
-  width: 90px;
-  height: 105px;
-  background-color: green;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1vh 0;
-  border-radius: 10%;
-
-} */
-
-/* is it also the sidebar */
 
 aside {
   /* height: 100vh; */
@@ -71,12 +57,6 @@ a:active {
   cursor: pointer;
 }
 
-.flex-navbar h1 {
-  font-size: 18px;
-  position: relative;
-  left: 5%;
-}
-
 .flex-navbar,
 .search,
 .cal-not-profile,
@@ -87,6 +67,7 @@ label {
 
 .flex-navbar {
   justify-content: space-between;
+  padding-left: 8%;
 }
 
 .search {
@@ -97,10 +78,8 @@ label {
   width: 20%;
 }
 
-.search input {
-  border: none;
-  outline: none;
-  margin-left: 4px;
+.search-con {
+  margin: 0 1vw;
 }
 
 .cal-date {
@@ -118,8 +97,6 @@ label {
   border: 1px solid #78828a;
   padding: 1.5vh 0;
   border-radius: 30px;
-  /* gap: 0 2vw; */
-  /* justify-content: space-between; */
 }
 
 .user-name-caret div {
@@ -131,82 +108,72 @@ label {
   flex-direction: column;
 }
 
-.last-all{
+.last-all {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* Dashboard comp */
-
-.dashboard-con {
-  padding-top: 12%;
-  padding-left: 7%;
-  /* padding-right: 5%; */
-
+.market {
+  width: 70%;
+  margin-top: 5vh;
 }
 
+.dashboard-con,
+.bar-page {
+  padding-top: 12%;
+  padding-left: 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.bar-con {
+  width: 70%;
+}
 
-.bar-table, .users-progress {
-   display: grid;
+.users-progress {
+  display: grid;
   grid-template-columns: 0.6fr 0.4fr;
   gap: 0 2%;
-
+  margin-top: 5%;
+  padding-right: 3%;
 }
 
-
-
-.chart{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* gap: 1vh 1vw; */
-}
-
-
-
-.icon-market{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.icon-market div{
-  width: 5vw
-}
-
-
-
-
-.chart-progress .chart div div{
-  /* width: 3%; */
-}
-
-.icon-chart{
-  display: flex;
-  align-items: center;
-}
-
-.apexcharts-title-text{
+.apexcharts-title-text {
   display: none;
 }
 
-.apexcharts-yaxis{
- display: none; 
+.apexcharts-yaxis {
+  display: none;
 }
 
-.apexcharts-inner{
-  /* display: none;  */
+.chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3vh 0;
+  margin-top: 5%;
+}
+.chart-small-con {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
+.chart-small-con div {
+  background-color: white;
+  padding: 1vh 1vw;
+  border-radius: 10px;
+}
 
-.up-p{
+.icon-market,
+.up-p {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* userpage  */
 .user-con {
   height: 100vh;
 }
@@ -215,7 +182,6 @@ label {
   width: 80%;
   padding-top: 12%;
   margin-left: 10%;
-  /* height: 100%; */
 }
 
 td {
@@ -231,10 +197,6 @@ td {
 }
 .fifty div {
   height: 10px !important;
-  /* background: rgb(224, 224, 222);
-  border-radius: 50px;
-  width: 100%;
-  overflow: hidden; */
 }
 
 .first-progress div div {
@@ -251,13 +213,6 @@ td {
 
 .fifty div div {
   height: 10px !important;
-  /* width: 50%;
-  background: rgb(106, 27, 154);
-  transition: width 1s ease-in-out 0s;
-  border-radius: inherit;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end; */
 }
 
 .platform-all,
@@ -289,7 +244,82 @@ td {
 }
 
 .apexcharts-canvas {
-  position: relative;
+  position: static !important;
   user-select: none;
-  z-index: -1 !important;
+}
+
+:where(.css-dev-only-do-not-override-1k979oh).ant-spin-nested-loading
+  .ant-spin-container::after {
+  z-index: 1 !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .flex-navbar {
+    padding-left: 12%;
+  }
+}
+
+@media screen and (max-width: 698px) {
+
+
+  .search{
+    display: none;
+  }
+
+  .cal-not-profile{
+      display: flex;
+      justify-content: flex-end;
+  }
+
+  .cal-not-profile div:nth-child(2){
+display: none;
+  }
+
+  aside{
+    font-size: 12px;
+  }
+
+  :where(.css-dev-only-do-not-override-1k979oh).ant-table-wrapper .ant-table {
+    font-size: 12px;
+  }
+
+  .bar-con canvas{
+     font-size: 12px !important; 
+  }
+
+  .progress-column{
+
+    font-size: 11px;
+  }
+
+  .last-all {
+    font-size: 11px;
+  }
+
+  .users-progress {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4vh 2%;
+  }
+
+  .dashboard-con {
+    margin: 0 2%;
+  }
+}
+
+@media screen and (max-width: 629px) {
+  .users-progress {
+    padding-left: 6%;
+  }
+}
+
+@media screen and (max-width: 629px) {
+  .dashboard-con{
+    padding-left: 20%;
+  }
+}
+@media screen and (max-width: 487px) {
+  .cal-not-profile{
+    display: none;
+}
 }

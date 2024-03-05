@@ -18,80 +18,16 @@ export function Dashboard() {
           <div>
             <BarChart />
           </div>
-
-            <div className="chart">
-              <div>
-                <div className="icon-market">
-                  <img src={icon} alt="" />
-                  <div>
-                    <Market />
-                  </div>
-                </div>
-                <p>Total Order</p>
-                <p>350</p>
-                <div className="up-p">
-                  <div>
-                    <img src={up} alt="" />
-                  </div>
-                  <p>vs. previous month</p>
-                </div>
-              </div>
-              <div>
-                <div className="icon-market">
-                  <img src={icon1} alt="" />
-                  <div>
-                    <Market />
-                  </div>
-                </div>
-                <p>Total Refund</p>
-                <p>270</p>
-                <div className="up-p">
-                  <div>
-                    <img src={up1} alt="" />
-                  </div>
-                  <p>vs. previous month</p>
-                </div>
-              </div>
-              <div>
-                <div className="icon-market">
-                  <img src={icon2} alt="" />
-                  <div>
-                    <Market />
-                  </div>
-                </div>
-                <p>Average Sales</p>
-                <p>1567</p>
-                <div className="up-p">
-                  <div>
-                    <img src={up1} alt="" />
-                  </div>
-                  <p>vs. previous month</p>
-                </div>
-              </div>
-              <div>
-                <div className="icon-market">
-                  <img src={icon3} alt="" />
-                  <div>
-                    <Market />
-                  </div>
-                </div>
-                <p>Total Income</p>
-                <p>350,000</p>
-                <div className="up-p">
-                  <div>
-                    <img src={up} alt="" />
-                  </div>
-                  <p>vs. previous month</p>
-                </div>
-              </div>
-            </div>
+          <div>
+            <Market />
+          </div>
         </div>
 
         <div>
           <div className="users-progress">
-          <div>
-            <UsersData />
-          </div>
+            <div>
+              <UsersData />
+            </div>
             <div className="progress-con">
               <div className="progress-column">
                 <div className="platform-all">

@@ -1,10 +1,14 @@
-import React from 'react'
-import BarChart from '../../components/BarChart'
+import React from "react";
+import BarChart from "../../components/BarChart";
 
 function BarChartPage() {
   return (
-	<div><BarChart /></div>
-  )
+    <div>
+      <div className="bar-page">
+        <BarChart />
+      </div>
+    </div>
+  );
 }
 
-export default BarChartPage
+export default BarChartPage;

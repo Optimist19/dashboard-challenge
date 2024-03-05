@@ -47,10 +47,11 @@ export const data = {
 function BarChart() {
   return (
     <div>
-
-      <Bar options={options} data={data} />
+      <div className="bar-con">
+        <Bar options={options} data={data} />
+      </div>
     </div>
-  )
+  );
 }
 
 export default BarChart;

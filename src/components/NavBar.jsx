@@ -10,12 +10,11 @@ function NavBar() {
   return (
     <div className="nav-bar">
       <div className="flex-navbar">
-        <h1>The page you are</h1>
         <div className="search">
           <div className="search-con">
             <img src={search} alt="" />
           </div>
-          <input type="text" placeholder="Search" />
+          <p>Search</p>
         </div>
         <div className="cal-not-profile">
           <div className="cal-date">
