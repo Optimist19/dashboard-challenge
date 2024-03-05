@@ -45,17 +45,19 @@ function UsersData() {
 
   return (
     <div>
-    <div className="last-all">
-      <p>Last Orders</p>
-      <p>See All</p>
-    </div>
-      <Table
-        columns={columns}
-        dataSource={users}
-        className="table"
-        loading={loading}
-        pagination={false}
-      />
+      <div className="user-l-t">
+        <div className="last-all">
+          <p>Last Orders</p>
+          <p>See All</p>
+        </div>
+        <Table
+          columns={columns}
+          dataSource={users}
+          className="table"
+          loading={loading}
+          pagination={false}
+        />
+      </div>
     </div>
   );
 }

@@ -248,6 +248,8 @@ td {
   user-select: none;
 }
 
+
+
 :where(.css-dev-only-do-not-override-1k979oh).ant-spin-nested-loading
   .ant-spin-container::after {
   z-index: 1 !important;
@@ -260,22 +262,20 @@ td {
 }
 
 @media screen and (max-width: 698px) {
-
-
-  .search{
+  .search {
     display: none;
   }
 
-  .cal-not-profile{
-      display: flex;
-      justify-content: flex-end;
+  .cal-not-profile {
+    display: flex;
+    justify-content: flex-end;
   }
 
-  .cal-not-profile div:nth-child(2){
-display: none;
+  .cal-not-profile div:nth-child(2) {
+    display: none;
   }
 
-  aside{
+  aside {
     font-size: 12px;
   }
 
@@ -283,12 +283,11 @@ display: none;
     font-size: 12px;
   }
 
-  .bar-con canvas{
-     font-size: 12px !important; 
+  .bar-con canvas {
+    font-size: 12px !important;
   }
 
-  .progress-column{
-
+  .progress-column {
     font-size: 11px;
   }
 
@@ -314,12 +313,14 @@ display: none;
 }
 
 @media screen and (max-width: 629px) {
-  .dashboard-con{
+  .dashboard-con {
     padding-left: 20%;
   }
 }
+
+
 @media screen and (max-width: 487px) {
-  .cal-not-profile{
+  .cal-not-profile {
     display: none;
-}
+  }
 }
